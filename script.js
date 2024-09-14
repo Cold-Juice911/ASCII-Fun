@@ -42,7 +42,7 @@ function adjustCanvasAndConvertToAscii(image) {
     canvas.height = targetHeight;
 
     // Clear the canvas and set a dark background color
-    ctx.fillStyle = '#000000'; // Dark background
+    ctx.fillStyle = '#18181892'; // Dark background
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 
     // Draw the image onto the canvas, scaled to fit within 1080p resolution
@@ -80,7 +80,7 @@ function adjustCanvasAndConvertToAscii(image) {
 
             // Draw the colored ASCII character with an outline
             ctx.strokeStyle = '#000'; // Black outline for contrast
-            ctx.lineWidth = 1; // Outline thickness
+            ctx.lineWidth = 0.1; // Outline thickness
             ctx.strokeText(asciiChar, x, y);
             ctx.fillText(asciiChar, x, y);
         }
