@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to ASCII Art (Greyscale)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image to ASCII Art (Greyscale)</h1>
+        <div class="upload-container">
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="generateButton">Generate ASCII Art</button>
+        </div>
+        <canvas id="asciiCanvas" width="1280" height="720"></canvas>
+        <button id="downloadButton" hidden>Download ASCII Art</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
